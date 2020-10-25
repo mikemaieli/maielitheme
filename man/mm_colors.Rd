@@ -4,7 +4,7 @@
 \name{mm_colors}
 \alias{mm_colors}
 \title{Define Colors}
-\format{An object of class \code{character} of length 6.}
+\format{An object of class \code{character} of length 26.}
 \usage{
 mm_colors
 }
