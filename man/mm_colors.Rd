@@ -3,12 +3,12 @@
 \docType{data}
 \name{mm_colors}
 \alias{mm_colors}
-\title{Adds color and theme options}
+\title{Define Colors}
 \format{An object of class \code{character} of length 6.}
 \usage{
 mm_colors
 }
 \description{
-Adds color and theme options
+Define Colors
 }
 \keyword{datasets}

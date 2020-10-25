@@ -1,7 +1,5 @@
-#' Adds color and theme options
+#' Define Colors
 #' @export
-
-#name colors
 mm_colors <- c(
   `teal` = "#146473",
   `yellow` = "#BA931D",
@@ -10,7 +8,9 @@ mm_colors <- c(
   `dark_grey` = "#4D5F63",
   `grey` = "#7A8182")
 
-#create function to choose any color
+
+#' Call Colors
+#' @export
 mm_cols <- function(...) {
   cols <- c(...)
 
@@ -20,7 +20,9 @@ mm_cols <- function(...) {
   mm_colors[cols]
 }
 
-#create palettes
+
+#' Define Color Palettes
+#' @export
 mm_palettes <- list(
   `main`  = mm_cols("teal", "yellow", "blue", "orange"),
   `cool`  = mm_cols("teal", "blue"),
@@ -28,7 +30,9 @@ mm_palettes <- list(
   `grey`  = mm_cols("grey", "dark grey")
 )
 
-#create function for palettes
+
+#' Call Color Palettes
+#' @export
 mm_pal <- function(palette = "main", reverse = FALSE, ...) {
   pal <- mm_palettes[[palette]]
 
@@ -37,7 +41,9 @@ mm_pal <- function(palette = "main", reverse = FALSE, ...) {
   colorRampPalette(pal, ...)
 }
 
-#color scale for ggplot
+
+#' Color Scales
+#' @export
 scale_color_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- mm_pal(palette = palette, reverse = reverse)
 
@@ -48,7 +54,9 @@ scale_color_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, .
   }
 }
 
-#fill scale for ggplot
+
+#' Fill Scales
+#' @export
 scale_fill_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
   pal <- mm_pal(palette = palette, reverse = reverse)
 
@@ -59,7 +67,9 @@ scale_fill_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
   }
 }
 
-#light ggplot theme
+
+#' mm_light ggplot theme
+#' @export
 theme_mm_light <- function () {
   theme_minimal(base_size = 12, base_family = "Barlow Condensed") %+replace%
     theme(
