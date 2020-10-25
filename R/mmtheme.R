@@ -47,7 +47,7 @@ mm_palettes <- list(
   `main`  = mm_cols("teal", "yellow", "purple", "coral", "blue", "green"),
   `cool`  = mm_cols("teal", "blue", "green"),
   `hot`   = mm_cols("yellow", "purple", "coral"),
-  `grey`  = mm_cols("gray_light", "gray", "gray_dark"),
+  `gray`  = mm_cols("gray_light", "gray", "gray_dark"),
   `mixed_scale`  = mm_cols("teal", "yellow", "coral")
 )
 
