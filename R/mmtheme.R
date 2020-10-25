@@ -1,3 +1,38 @@
+#' mm_light ggplot theme
+#' @export
+theme_mm_light <- function () {
+  theme_minimal(base_size = 12, base_family = "Barlow Condensed") %+replace%
+    theme(
+      plot.title = element_text(family = "Merriweather",
+                                face = "bold",
+                                size = 18,
+                                hjust = 0,
+                                margin = margin(0,0,10,0)),
+      plot.title.position = "plot",
+      plot.subtitle = element_text(hjust = 0,
+                                   margin = margin(0,0,36,0)),
+      plot.caption = element_text(size = 10,
+                                  color = "#7A8182",
+                                  hjust = 1,
+                                  margin = margin(10,0,0,0)),
+      plot.caption.position = "plot",
+      axis.text = element_text(color = "black"),
+      axis.title.y = element_text(face = "italic",
+                                  angle = 90,
+                                  hjust = 1,
+                                  size = 10,
+                                  color = "#7A8182",
+                                  margin = margin(0,10,0,0)),
+      axis.title.x = element_text(face = "italic",
+                                  hjust = 0,
+                                  size = 10,
+                                  color = "#7A8182",
+                                  margin = margin(10,0,0,0)),
+      plot.margin = margin(20,20,20,20)
+    )
+}
+
+
 #' Define Colors
 #' @export
 mm_colors <- c(
@@ -65,39 +100,4 @@ scale_fill_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
   } else {
     scale_fill_gradientn(colours = pal(256), ...)
   }
-}
-
-
-#' mm_light ggplot theme
-#' @export
-theme_mm_light <- function () {
-  theme_minimal(base_size = 12, base_family = "Barlow Condensed") %+replace%
-    theme(
-      plot.title = element_text(family = "Merriweather",
-                                face = "bold",
-                                size = 18,
-                                hjust = 0,
-                                margin = margin(0,0,10,0)),
-      plot.title.position = "plot",
-      plot.subtitle = element_text(hjust = 0,
-                                   margin = margin(0,0,36,0)),
-      plot.caption = element_text(size = 10,
-                                  color = "#7A8182",
-                                  hjust = 1,
-                                  margin = margin(10,0,0,0)),
-      plot.caption.position = "plot",
-      axis.text = element_text(color = "black"),
-      axis.title.y = element_text(face = "italic",
-                                  angle = 90,
-                                  hjust = 1,
-                                  size = 10,
-                                  color = "#7A8182",
-                                  margin = margin(0,10,0,0)),
-      axis.title.x = element_text(face = "italic",
-                                  hjust = 0,
-                                  size = 10,
-                                  color = "#7A8182",
-                                  margin = margin(10,0,0,0)),
-      plot.margin = margin(20,20,20,20)
-    )
 }
