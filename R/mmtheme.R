@@ -103,7 +103,7 @@ theme_mm_light <- function () {
       plot.subtitle = element_text(hjust = 0,
                                    margin = margin(0,0,36,0)),
       plot.caption = element_text(size = 10,
-                                  color = "gray",
+                                  color = "gray_dark",
                                   hjust = 1,
                                   margin = margin(10,0,0,0)),
       plot.caption.position = "plot",
@@ -112,12 +112,12 @@ theme_mm_light <- function () {
                                   angle = 90,
                                   hjust = 1,
                                   size = 10,
-                                  color = "gray",
+                                  color = "gray_dark",
                                   margin = margin(0,10,0,0)),
       axis.title.x = element_text(face = "italic",
                                   hjust = 0,
                                   size = 10,
-                                  color = "gray",
+                                  color = "gray_dark",
                                   margin = margin(10,0,0,0)),
       plot.margin = margin(20,20,20,20)
     )

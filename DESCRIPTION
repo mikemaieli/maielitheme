@@ -1,11 +1,10 @@
 Package: maielitheme
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Custom ggplot theme and color palette for Mike Maieli
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Mike Maieli
+Maintainer: The package maintainer <mmaieli@gmail.com>
+Description: Package is a custom ggplot theme and color palettes to be used by Mike Maieli
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
