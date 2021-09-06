@@ -92,33 +92,37 @@ scale_fill_mm <- function(palette = "main", discrete = TRUE, reverse = FALSE, ..
 #' mm_light ggplot theme
 #' @export
 theme_mm_light <- function () {
-  theme_minimal(base_size = 12, base_family = "Barlow Condensed") %+replace%
+  theme_minimal(base_size = 12, base_family = "Roboto Condensed") %+replace%
     theme(
-      plot.title = element_text(family = "Merriweather",
+      plot.title = element_text(family = "Barlow Condensed",
                                 face = "bold",
                                 size = 18,
+                                color = "#292929",
                                 hjust = 0,
                                 margin = margin(0,0,10,0)),
       plot.title.position = "plot",
-      plot.subtitle = element_text(hjust = 0,
+      plot.subtitle = element_text(color = "#292929",
+                                   hjust = 0,
                                    margin = margin(0,0,36,0)),
       plot.caption = element_text(size = 10,
-                                  color = "gray",
+                                  color = "#757575",
                                   hjust = 1,
                                   margin = margin(10,0,0,0)),
       plot.caption.position = "plot",
-      axis.text = element_text(color = "black"),
+      axis.text = element_text(color = "#292929"),
       axis.title.y = element_text(face = "italic",
                                   angle = 90,
                                   hjust = 1,
                                   size = 10,
-                                  color = "gray",
+                                  color = "#757575",
                                   margin = margin(0,10,0,0)),
       axis.title.x = element_text(face = "italic",
-                                  hjust = 0,
                                   size = 10,
-                                  color = "gray",
+                                  color = "#757575",
                                   margin = margin(10,0,0,0)),
+      legend.title = element_text(face = "bold",
+                                  size = 10),
+      legend.title.align = 0,
       plot.margin = margin(20,20,20,20)
     )
 }
